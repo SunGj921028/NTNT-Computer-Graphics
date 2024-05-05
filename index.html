@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>HW03</title>
+    </head>
+
+    <body onload="main()">
+        <canvas id="webgl" width = "800" height = "800">
+            Please use a browser that support "canvas"
+        </canvas>
+        <script src="cuon-matrix.js"></script>
+        <script src="shader.js"></script>
+        <script src="WebGL.js"></script>
+        <script src="object.js"></script>
+        <script src="setMat.js"></script>
+        <div class="zoom" style="font-weight: bold;">
+            Zoom: <input type="range" min="-30" max="30" value="0" class="slider" id="zoom">
+        </div>
+        <br>
+        <div class="robot-movement" style="font-weight: bold;">
+            Move on x-axis: <input type="range" min="-300" max="300" value="0" class="slider" id="movement-x">
+            Move on z-axis: <input type="range" min="-300" max="300" value="0" class="slider" id="movement-z">
+        </div>
+        <br>
+        <div class="mv-rotate" style="font-weight: bold;">
+            Rotate First Joint (blue): <input type="range" min="-3" max="3" value="0" class="slider" id="rotate-1">
+            Rotate Second Joint (green): <input type="range" min="-6" max="6" value="0" class="slider" id="rotate-2">
+            Rotate Third Joint (yello): <input type="range" min="-15" max="3" value="0" class="slider" id="rotate-3">
+        </div>
+        <div class="obj-rotate" style="font-weight: bold;">
+            Rotate Object First joint: <input type="range" min="-25" max="25" value="0" class="slider" id="obj-rotate-1">
+            Rotate Object Second joint: <input type="range" min="-25" max="25" value="0" class="slider" id="obj-rotate-2">
+        </div>
+        <br>
+        <div class="grab" style="font-weight: bold;">
+            <span style="color:blueviolet">Press G or g to grab object !!</span>
+        </div>
+    </body>
+</html>
+
+
