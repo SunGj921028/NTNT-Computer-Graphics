@@ -1,6 +1,5 @@
 # NTNU-Computer-Graphics
 
-***
 ### **Environment Set**
 1. Windows System
 2. This project using WebGL API
